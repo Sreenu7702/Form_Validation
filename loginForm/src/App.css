@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1b8af1, #b58ded);
+}
+
+.login {
+  width: 434px;
+  background: #fff;
+  border-radius: 22px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow:0 4px 8px rgba(0, 0, 0, 0.2),0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+h4 {
+  margin: 0 0 35px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+form {
+  width: 100%;
+}
+
+.text_area {
+  width: 100%;
+  height: 64px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2),0 0 20px rgba(0, 0, 0, 0.19);
+}
+
+.text_input {
+  width: 85%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.btn {
+  width: 165px;
+  height: 60px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 30px;
+  background: #b58ded;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow:0 4px 8px rgba(181, 141, 237, 0.7),0 6px 20px rgba(181, 141, 237, 0.9);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.link {
+  display: block;
+  margin-top: 25px;
+  text-decoration: none;
+  color: #0e4579;
+  font-size: 16px;
+  font-family: "Segoe UI", sans-serif;
+}
+.link:hover {
+  text-decoration: underline;
+}
