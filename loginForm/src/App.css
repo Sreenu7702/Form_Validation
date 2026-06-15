@@ -13,7 +13,7 @@ body {
   border-radius: 22px;
   padding: 40px 30px;
   text-align: center;
-  box-shadow:0 4px 8px rgba(0, 0, 0, 0.2),0 6px 20px rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
 h4 {
@@ -35,7 +35,9 @@ form {
   align-items: center;
   justify-content: center;
   border-radius: 22px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2),0 0 20px rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2),
+    0 0 20px rgba(0, 0, 0, 0.19);
+  transition: 0.3s;
 }
 
 .text_input {
@@ -57,7 +59,8 @@ form {
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
-  box-shadow:0 4px 8px rgba(181, 141, 237, 0.7),0 6px 20px rgba(181, 141, 237, 0.9);
+  box-shadow: 0 4px 8px rgba(181, 141, 237, 0.7),
+    0 6px 20px rgba(181, 141, 237, 0.9);
   transition: 0.3s;
 }
 
@@ -73,6 +76,20 @@ form {
   font-size: 16px;
   font-family: "Segoe UI", sans-serif;
 }
+
 .link:hover {
   text-decoration: underline;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  text-align: left;
+  margin: -15px 0 15px 10px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.input-error {
+  border: 2px solid red;
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.8);
 }
