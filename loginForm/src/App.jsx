@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+
 function App() {
   function handleSubmit(e) {
     e.preventDefault();
@@ -26,9 +27,9 @@ function App() {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     const passwordPattern =
-      /^(?=.[a-z])(?=.[A-Z])(?=.\d)(?=.[@$!%*?&]).{8,}$/;
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$/;
 
-    // Email Validation
+  
     if (email === "") {
       emailError.textContent = "Email is required";
       emailBox.classList.add("input-error");
@@ -39,7 +40,7 @@ function App() {
       isValid = false;
     }
 
-    // Password Validation
+    
     if (password === "") {
       passwordError.textContent = "Password is required";
       passwordBox.classList.add("input-error");
@@ -82,6 +83,7 @@ function App() {
             placeholder="Enter Password"
             className="text_input"
           />
+          
         </div>
         <p id="passwordError" className="error"></p>
 
